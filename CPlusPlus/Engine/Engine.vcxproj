@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f76414d6-9ed8-4b36-884f-3c96b7c83118}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Binary/CPlusPlus/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(SolutionDir)Binary/CPlusPlus/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Binary/CPlusPlus/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(SolutionDir)Binary/CPlusPlus/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Binary/CPlusPlus/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(SolutionDir)Binary/CPlusPlus/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Binary/CPlusPlus/$(Configuration)/$(Platform)/</OutDir>
+    <IntDir>$(SolutionDir)Binary/CPlusPlus/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Include\Engine.h" />
+    <ClInclude Include="Source\Runtime\Asset\Bitmap.h" />
+    <ClInclude Include="Source\Runtime\Asset\Wave.h" />
+    <ClInclude Include="Source\Runtime\Core.h" />
+    <ClInclude Include="Source\Runtime\Core\Base.h" />
+    <ClInclude Include="Source\Runtime\Core\Base\Macro.h" />
+    <ClInclude Include="Source\Runtime\Core\Base\Type.h" />
+    <ClInclude Include="Source\Runtime\Core\Container\DynamicArray.h" />
+    <ClInclude Include="Source\Runtime\Core\Container\LinkedList.h" />
+    <ClInclude Include="Source\Runtime\Core\Mathematics\BezierCurve.h" />
+    <ClInclude Include="Source\Runtime\Core\Mathematics\Color.h" />
+    <ClInclude Include="Source\Runtime\Core\Mathematics\Math.h" />
+    <ClInclude Include="Source\Runtime\Core\Mathematics\Matrix.h" />
+    <ClInclude Include="Source\Runtime\Core\Mathematics\Quaternion.h" />
+    <ClInclude Include="Source\Runtime\Core\Mathematics\Vector.h" />
+    <ClInclude Include="Source\Runtime\Core\String\String.h" />
+    <ClInclude Include="Source\Runtime\Core\String\Unicode.h" />
+    <ClInclude Include="Source\Runtime\Core\System\Allocator.h" />
+    <ClInclude Include="Source\Runtime\Core\System\Delay.h" />
+    <ClInclude Include="Source\Runtime\Core\System\Endian.h" />
+    <ClInclude Include="Source\Runtime\Core\System\HeapMemory.h" />
+    <ClInclude Include="Source\Runtime\Core\System\Memory.h" />
+    <ClInclude Include="Source\Runtime\Core\System\Timer.h" />
+    <ClInclude Include="Source\Runtime\Core\Template.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\Conditional.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\ContainedFromParameterPack.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\EnableIf.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\EnumClass.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\EnumUnderlyingType.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\Forward.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\FunctionPointer.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IntegralConstant.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IsArithmetic.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IsCharacter.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IsConstructible.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IsConvertible.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IsEnum.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IsEnumClass.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IsFloatPoint.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\IsIntegral.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\ParameterPackHelper.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\RemoveAllExtents.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\RemoveAllPointers.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\RemoveConst.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\RemoveExtent.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\RemovePointer.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\RemoveReference.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\SelectNthFromParameterPack.h" />
+    <ClInclude Include="Source\Runtime\Core\Template\TypesAreSame.h" />
+    <ClInclude Include="Source\Runtime\Platform\SAL\Directory.h" />
+    <ClInclude Include="Source\Runtime\Platform\SAL\EventSystem.h" />
+    <ClInclude Include="Source\Runtime\Platform\SAL\File.h" />
+    <ClInclude Include="Source\Runtime\Platform\SAL\Path.h" />
+    <ClInclude Include="Source\Runtime\Platform\Windows\DirectSound.h" />
+    <ClInclude Include="Source\Runtime\Platform\Windows\FileDialog.h" />
+    <ClInclude Include="Source\Runtime\Platform\Windows\GraphicDeviceInterface.h" />
+    <ClInclude Include="Source\Runtime\Platform\Windows\Icon.h" />
+    <ClInclude Include="Source\Runtime\Platform\Windows\Window.h" />
+    <ClInclude Include="Source\Runtime\Platform\Windows\Windows.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Runtime\Asset\Bitmap.cpp" />
+    <ClCompile Include="Source\Runtime\Asset\Wave.cpp" />
+    <ClCompile Include="Source\Runtime\Core\Mathematics\Color.cpp" />
+    <ClCompile Include="Source\Runtime\Core\Mathematics\Math.cpp" />
+    <ClCompile Include="Source\Runtime\Core\Mathematics\Matrix.cpp" />
+    <ClCompile Include="Source\Runtime\Core\Mathematics\Quaternion.cpp" />
+    <ClCompile Include="Source\Runtime\Core\Mathematics\Vector.cpp" />
+    <ClCompile Include="Source\Runtime\Core\String\String.cpp" />
+    <ClCompile Include="Source\Runtime\Core\System\Delay.cpp" />
+    <ClCompile Include="Source\Runtime\Core\System\Endian.cpp" />
+    <ClCompile Include="Source\Runtime\Core\System\HeapMemory.cpp" />
+    <ClCompile Include="Source\Runtime\Core\System\Memory.cpp" />
+    <ClCompile Include="Source\Runtime\Core\System\Timer.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\SAL\Directory.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\SAL\EventSystem.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\SAL\File.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\SAL\Path.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\Windows\DirectSound.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\Windows\FileDialog.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\Windows\GraphicDeviceInterface.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\Windows\Icon.cpp" />
+    <ClCompile Include="Source\Runtime\Platform\Windows\Window.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
